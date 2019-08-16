@@ -1,0 +1,30 @@
+<!--pages/list/list.wxml-->
+<view class="top">
+<swiper class="banner_boder" autoplay="true" interval="3000" vertical="true" circular="true">
+<swiper-item>
+<image src="/pages/image/1.jpg" style="width:100%; height:100%;"></image>
+</swiper-item>
+<swiper-item>
+<image src="/pages/image/2.jpg" style="width:100%; height:100%;"></image>
+</swiper-item>
+<swiper-item>
+<image src="/pages/image/6.jpg" style="width:100%; height:100%;"></image>
+</swiper-item>
+</swiper>
+</view>
+<view>
+    <view wx:for="{{ article_list }}" wx:for-item="item" class="content" hover-class="content_hover" >
+      <view class="pic_box">
+        <image src="{{ item.picture }}"></image>
+      </view>
+      <view class="content_box">
+        <view>
+          <navigator class="title" open-type="reLaunch" url="/pages/list/list?pages='{{index}}'">{{item.title}}</navigator>
+        </view>
+        <text class="description"> {{ item.description }}</text>
+        <view class="time">
+                {{ motto }} {{ item.time }}
+        </view> 
+      </view>
+    </view>
+</view>

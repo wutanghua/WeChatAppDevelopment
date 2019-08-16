@@ -1,0 +1,44 @@
+
+/**index.wxss**/
+.{
+  font-family: 微软雅黑；
+}
+.banner {
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+   width: 100%;
+   height: 110px;
+   display: flex;
+   margin-top: 5px;
+   background:  #EFFFE9;
+   border-bottom: 3px #E71D36 solid; 
+}
+.content_hover{
+  background-color:  #EFFFE9;
+}
+.pic_box{
+   width: 30%;
+   height: 110px;
+}
+
+.pic_box image{
+   width: 100%;
+   height: 100%;
+  
+}
+
+.content_box{
+  width: 70%;
+  height: 110px;
+  text-align: left;
+  background: #EFFFE9;
+  
+  border-bottom: 3px #E71D36 solid; 
+}
+
+.time{
+   text-align: right;
+}
